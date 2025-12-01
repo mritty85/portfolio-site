@@ -418,8 +418,19 @@ input:checked+.slider:before {
     border: 2px solid #fff;
 }
 
+[data-theme="fun"] .slider:before {
+    height: 10px;
+    width: 10px;
+    left: 3px;
+    bottom: 3px;
+}
+
 [data-theme="fun"] input:checked+.slider {
     background-color: var(--accent);
+}
+
+[data-theme="fun"] input:checked+.slider:before {
+    transform: translateX(14px);
 }
 
 /* Mobile Responsiveness */
