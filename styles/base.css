@@ -318,12 +318,30 @@ body {
 
 .code-content ul {
     list-style: none;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     border-left: 1px solid var(--border);
+}
+
+.code-content ul li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.code-content ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
 }
 
 [data-theme="fun"] .code-content ul {
     border-left: 2px dashed var(--accent);
+}
+
+[data-theme="fun"] .code-content ul li::before {
+    content: ">";
+    font-family: var(--font-header);
 }
 
 /* Toggle Switch */
