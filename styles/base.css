@@ -413,23 +413,32 @@ input:checked+.slider:before {
 }
 
 /* Fun Theme Specific Overrides */
+[data-theme="fun"] .switch {
+    width: 36px;
+    height: 20px;
+}
+
 [data-theme="fun"] .slider {
     background-color: #444;
     border: 2px solid #fff;
+    border-radius: 0;
 }
 
 [data-theme="fun"] .slider:before {
     background-color: var(--accent);
     border-radius: 0;
-    /* Square toggle for pixel feel */
-    height: 10px;
-    width: 10px;
-    bottom: 3px;
-    left: 3px;
+    height: 12px;
+    width: 12px;
+    bottom: 2px;
+    left: 2px;
 }
 
 [data-theme="fun"] .slider.round {
     border-radius: 0;
+}
+
+[data-theme="fun"] input:checked+.slider:before {
+    transform: translateX(16px);
 }
 
 /* Mobile Responsiveness */

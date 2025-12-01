@@ -36,7 +36,7 @@ const workData = {
         }
     ],
     content: {
-        'work-readme': `<h1>Martin Rittenhouse</h1>
+        'work-readme': `<h1>Martin Rittenberry</h1>
 <h2>Solutions Architect & Technical Consultant</h2>
 <br>
 <p>> Specializing in HubSpot architecture, Google Apps Script, and AI integrations.</p>
@@ -608,7 +608,7 @@ const workData = {
 `,
         'work-contact': `{
     "email": "martin@example.com",
-    "linkedin": "linkedin.com/in/martinrittenhouse",
+    "linkedin": "linkedin.com/in/martinrittenberry",
     "github": "github.com/mritty"
 }`
     }
