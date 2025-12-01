@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Rittenhouse | Portfolio</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-theme="work">
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="explorer-title">EXPLORER</span>
+                <div class="mode-toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label">FUN MODE</span>
+                </div>
+            </div>
+
+            <div class="file-tree" id="file-tree">
+                <!-- Content injected by JS -->
+            </div>
+
+            <button id="sidebar-toggle" class="sidebar-toggle">
+                <span class="icon">◀</span> <span class="text">Hide Menu</span>
+            </button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="tab-bar">
+                <div class="tab active" id="active-tab">
+                    <span class="icon">📄</span> <span id="tab-filename">readme.md</span>
+                    <span class="close">×</span>
+                </div>
+            </div>
+
+            <div class="editor-area">
+                <div class="line-numbers">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+                </div>
+                <div class="code-content" id="content-display">
+                    <!-- Content injected by JS -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
